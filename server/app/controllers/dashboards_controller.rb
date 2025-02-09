@@ -1,10 +1,7 @@
 class DashboardsController < ApplicationController
     def index
-        data = User.all
+        data = Course.dashboard_data
 
-        render json: {
-            data: "This is the dashboard.",
-            user: data
-        }, status: :ok
+        render json: data, status: :ok
     end
 end
