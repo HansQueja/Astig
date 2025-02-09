@@ -47,4 +47,32 @@
 
 .astig-tagline {
     display: flex;
+    font-size: 17px;
+    text-align: left;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.navigation-panel {
+    justify-items: left;
+}
+
+.navigation-item {
+    justify-items: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation-item img {
+    width: 15px;
+    filter: invert(1);
+    margin-right: 12px;
 }

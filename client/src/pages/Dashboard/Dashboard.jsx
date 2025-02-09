@@ -40,7 +40,9 @@ function Dashboard() {
     return (
         <div>
             <Sidebar />
-            {listItems}
+            <div className="dashboard-container">
+                {listItems}
+            </div>
         </div>
     );
   

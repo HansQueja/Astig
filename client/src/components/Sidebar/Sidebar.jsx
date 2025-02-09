@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import './Sidebar.css'
+import dashboardIcon from "../../assets/home.png";
 
 function Sidebar() {
 
@@ -10,6 +12,13 @@ function Sidebar() {
                 </div>
                 <div className="astig-tagline">
                     Alamin, Tuklasin!
+                </div>
+                <hr/>
+                <div className="navigation-panel">
+                    <h5>MAIN</h5>
+                    <NavLink to="/dashboard" className="navigation-item">
+                        <img src={dashboardIcon} />Dashboard
+                    </NavLink>
                 </div>
             </div>
         </div>
