@@ -1,0 +1,50 @@
+@font-face {
+    font-family: QanelasBold;
+    src: url(../../fonts/Qanelas/QanelasBold.otf);
+}
+  
+@font-face {
+    font-family: QanelasSemiBold;
+    src: url(../../fonts/Qanelas/QanelasSemiBold.otf);
+}
+
+@font-face {
+    font-family: QanelasMedium;
+    src: url(../../fonts/Qanelas/QanelasMedium.otf);
+}
+
+@font-face {
+    font-family: QanelasRegular;
+    src: url(../../fonts/Qanelas/QanelasRegular.otf);
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-width: 250px;
+    min-width: 250px;
+    color: white;
+    background-color: #193669;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar-margin {
+    margin: 30px;
+}
+
+.astig-logo {
+    display: flex;
+    font-size: 55px;
+    font-family: QanelasSemiBold;
+}
+
+.astig-tagline {
+    display: flex;
+}
