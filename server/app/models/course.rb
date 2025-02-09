@@ -6,7 +6,7 @@ class Course < ApplicationRecord
     def self.dashboard_data
         raw_data = Course.all
 
-        data = {}
+        data = []
 
         raw_data.each do |course|
             temp_data = {}
@@ -15,7 +15,8 @@ class Course < ApplicationRecord
             temp_data["Course"] = course.course_name
             temp_data["University"] = university.name
             temp_data["Department"] = department.name
-            data[course.id] = temp_data
+            temp_data["ID"] = course.id 
+            data.push(temp_data)
         end
 
         return data.as_json
