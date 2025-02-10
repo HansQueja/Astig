@@ -1,7 +1,10 @@
 class DashboardsController < ApplicationController
     def index
-        data = Course.dashboard_data
-        pagination_data = Course.all.page(params[:page])
+
+        page = params[:page] || 1
+
+        data = Course.dashboard_data(page)
+        pagination_data = Course.page(page)
 
         render json: {
             data: data,
