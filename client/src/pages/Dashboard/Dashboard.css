@@ -1,4 +1,46 @@
+.dashboard-pg {
+    height: 100%;
+    margin-left: 250px;
+}
+
 .dashboard-container {
+    padding: 50px;
+    justify-items: center;
+}
+
+.table {
+    background-color: rgb(244, 244, 244);
+    padding: 5px 20px;
+    width: 90%;
+    border-radius: 10px;
     
-    background-color: aqua;
+}
+
+.course-name, .table-header {
+    font-family: "Qanelas";
+    font-weight: 600;
+}
+
+.table-header, .entry-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    text-align: left;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+}
+
+.table-header {
+    color: rgb(74, 74, 74);
+    font-size: 16px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0em 0;
+    padding: 0;
 }
