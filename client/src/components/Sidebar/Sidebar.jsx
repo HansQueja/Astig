@@ -1,26 +1,33 @@
 import { NavLink } from "react-router-dom";
 import './Sidebar.css'
 import dashboardIcon from "../../assets/home.png";
+import logo from "../../assets/duck.png";
 
 function Sidebar() {
 
     return (
         <div className="sidebar-container">
-            <div className="sidebar-margin">
-                <div className="astig-logo">
-                    ASTIG
-                </div>
-                <div className="astig-tagline">
-                    Alamin, Tuklasin!
+                <div>
+                    <img src={logo} className="astig-logo"/>
                 </div>
                 <hr/>
                 <div className="navigation-panel">
-                    <h5>MAIN</h5>
                     <NavLink to="/dashboard" className="navigation-item">
-                        <img src={dashboardIcon} />Dashboard
+                        HOME
+                    </NavLink>
+                    <NavLink to="/dashboard" className="navigation-item">
+                        PROGRAMS AND UNIVERSITIES
+                    </NavLink>
+                    <NavLink to="/dashboard" className="navigation-item">
+                        DOST SCHOLARSHIP
+                    </NavLink>
+                    <NavLink to="/dashboard" className="navigation-item">
+                        ABOUT
+                    </NavLink>
+                    <NavLink to="/dashboard" className="navigation-item">
+                        CONTACT
                     </NavLink>
                 </div>
-            </div>
         </div>
     );
   

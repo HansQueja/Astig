@@ -1,35 +1,27 @@
 .sidebar-container {
     display: flex;
     flex-direction: column;
-  
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    max-width: 250px;
-    min-width: 250px;
+    width: 331px;
+    height: 1092px;
+    flex-shrink: 0;
     color: white;
-    background-color: #193669;
+    background-color: #3e3e3e8a;
     border-right: 1px solid #ddd;
-    z-index: 1000;
+    z-index: 0;
     overflow-y: auto;
 }
 
-.sidebar-margin {
-    margin: 30px;
-}
 
 .astig-logo {
-    display: flex;
-    font-size: 55px;
-    font-family: "Qanelas";
-    font-weight: 700;
-}
-
-.astig-tagline {
-    display: flex;
-    font-size: 17px;
-    text-align: left;
+    margin: 30px;
+    z-index: 1000;
+    width: 268px;
+    height: 131px;
+    flex-shrink: 0;
+    aspect-ratio: 268/131;
 }
 
 hr {
@@ -41,21 +33,24 @@ hr {
     padding: 0;
 }
 
-.navigation-panel {
-    justify-items: left;
-    font-family: "Qanelas";
-    font-weight: 500;
-}
-
 .navigation-item {
-    justify-items: center;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.navigation-item img {
-    width: 15px;
-    filter: invert(1);
-    margin-right: 12px;
+    display: flex;
+    width: 33px;
+    height: 72px;
+    padding: 10px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    opacity: 0.8;
+    background: rgba(92, 12, 13, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
 }
