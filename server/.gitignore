@@ -33,7 +33,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore the csv files.
+# Ignore the .csv files
 course_ncr.csv
 department_ncr.csv
 university_ncr.csv
