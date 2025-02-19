@@ -8,8 +8,8 @@ function Landing() {
     return (
         <div>
             <Sidebar />
-            <div className="dashboard-container">
-                "listItems"
+            <div>
+                Tanginamo
             </div>
         </div>
     );

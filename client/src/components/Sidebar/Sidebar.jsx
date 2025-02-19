@@ -12,7 +12,7 @@ function Sidebar() {
                 </div>
                 <hr/>
                 <div className="navigation-panel">
-                    <NavLink to="/dashboard" className="navigation-item">
+                    <NavLink to="/landing" className="navigation-item">
                         HOME
                     </NavLink>
                     <NavLink to="/dashboard" className="navigation-item">
