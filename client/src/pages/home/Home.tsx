@@ -1,8 +1,11 @@
 import "./Home.css";
+import Bg from "../../assets/Background.png";
 
 function Home() {
   return (
-    <div></div>
+    <div>
+      <img src= { Bg } className = "background"></img>
+    </div>
   );
 }
 
