@@ -16,10 +16,10 @@ function Menu() {
         </NavLink>
         <ul className="">
           <li>
-            <NavLink className="home" to="/">Home</NavLink>
+            <NavLink className="Link" id="home" to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink className="Link" to="/programs">Programs and Universities</NavLink>
+            <NavLink className="Link" id="prog" to="/programs">Programs & Universities</NavLink>
           </li>
           <li>
             <NavLink className="Link" to="/dost">DOST Scholarship</NavLink>
