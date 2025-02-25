@@ -21,6 +21,10 @@
     max-width: 10vw;
 }
 
+#logo:hover{
+    filter: drop-shadow(0 -2vh 2em #efefefaa);
+}
+
 .menu li{
    list-style-type: none;
    display: inline-block;

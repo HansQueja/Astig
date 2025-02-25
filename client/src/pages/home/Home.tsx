@@ -1,5 +1,4 @@
 import "./Home.css";
-import Bg from "../../assets/Background.png";
 import { useState } from "react";
 
 function Home() {
@@ -15,18 +14,18 @@ function Home() {
 
   return (
     <div>
-      <img src= { Bg } className = "background"></img>
-
       <div className = "content">
         <h1>
-        Aspiring Scholars Toolkit and Information Guide
+        Start your scholar journey with ASTIG
         </h1>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-        mollit anim id est laborum
+        Live your isko dreams, kasama ang ASTIG mong tropa! <b>Aspiring Scholars Toolkit and
+        Information Guide (ASTIG)</b> provides you with information about <i>DOST scholarship,
+        eligible programs, accredited universities, scholar initiatives, and more!</i>
+        </p>
+        <p></p>
+        <p>
+        Not yet sure kung anong <i>astig</i> program ang para sa'yo?
         </p>
       </div>
 
