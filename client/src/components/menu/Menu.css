@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Menco";
+    src: url("../../fonts/Proxima.otf");
+    font-style: bold;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1000;
+    padding:3.5vw 1vw;
+    background-color: rgba(40, 37, 37, 0.615);
+}
+
+#logo{
+    max-width: 10vw;
+}
+
+.menu li{
+   list-style-type: none;
+   display: inline-block;
+   font-family: "Menco";
+   font-size: clamp(0.1em, 2vw, 1em);
+   letter-spacing: 1px;
+   padding: 0;
+   margin-top: 1vw;
+   color:white
+}
+
+.menu a{
+    text-decoration: none;
+    color: inherit;
+    padding: 5.75vh 1vw;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 0vh;
+}
+
+.menu .Link:hover{
+    background-color: #EC9A29;
+    color: #0E8B8D;
+}
+
+#home{
+    padding: 5.75vh 2vw;
+}
