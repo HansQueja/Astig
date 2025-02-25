@@ -8,11 +8,10 @@
 }
 
 .content{
-    position: relative;
     color: white;
     z-index: 1;
     text-align: right;
-    padding: 70vh 4vw 0vh 20vw;
+    padding: 60vh 3vw 0vh 20vw;
 }
 
 .content h1{
@@ -22,12 +21,15 @@
 }
 
 .content p{
-    font-size: clamp(1em, 0.25vw, 2em);
+    font-size: clamp(0.5em, 1vw, 2em);
 }
 
 
 #lrnBtn{
+    display: relative;
+    font-size: clamp(0.2em, 1.25vw, 2em);
     margin-left: 81.5vw;
+    margin-right: 1vw;
     border-radius: 2vh;
     padding:1vw;
     font-weight: 500;
@@ -68,7 +70,7 @@
 }
 
 .close-btn {
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
     background: black;
     color: white;
     border: none;
