@@ -14,7 +14,7 @@ function Menu() {
             alt="Logo"
           />
         </NavLink>
-        <ul className="">
+        <ul>
           <li>
             <NavLink className="Link" id="home" to="/">Home</NavLink>
           </li>
