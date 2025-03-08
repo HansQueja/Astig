@@ -1,3 +1,43 @@
 .program-container {
     margin-top: 6em;
+    padding: 2em;
+    height: 100%;
+    color: white;
+    background-color: rgb(36, 61, 134);
 }
+
+.program-table {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    color: black;
+    border-radius: 5px;
+}
+
+.program-row {
+    display: grid;
+    grid-template-columns: 350px 450px auto;
+    margin-bottom: 1em;
+    gap:1em
+}
+
+.program-row-header {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0em 1em;
+}
+
+.program-content {
+    padding: 0em 1em;
+}
+
+.program-pagination button {
+    border-radius: 5px;
+    border: none;
+    margin-right: 1em;
+    padding: 0.5em;
+}
+
+.program-pagination button:hover {
+    background-color: #ffb027; /* Green */
+    color: white;
+  }
