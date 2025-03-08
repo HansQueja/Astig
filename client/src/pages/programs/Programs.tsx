@@ -73,20 +73,28 @@ function Programs() {
 
   return (
     <div className="program-container">
-      <h1>Courses</h1>
-      <ul>
-        {apiData.data.map((course) => (
-          <li key={course.ID}>
-            {course.Course} - {course.University} ({course.Department})
-          </li>
-        ))}
-      </ul>
-
-      <p>
-        Page {apiData.pagination.current_page} of {apiData.pagination.total_pages} (Total items: {apiData.pagination.total_items})
-      </p>
-      {apiData.pagination.previous_page && <button onClick={()=>{fetchData(`http://127.0.0.1:3000/api/dashboards?page=${apiData.pagination.previous_page}`)}}>Previous Page</button>}
-      {apiData.pagination.next_page && <button onClick={()=>{fetchData(`http://127.0.0.1:3000/api/dashboards?page=${apiData.pagination.next_page}`)}}>Next Page</button>}
+      <h1>Programs and Universities</h1>
+      <div className="program-table">
+        <div className="program-row">
+          <div className="program-row-header">Program</div>
+          <div className="program-row-header">Institution</div>
+          <div className="program-row-header">Department</div>
+        </div>
+          {apiData.data.map((course) => (
+            <div className="program-row" key={course.ID}>
+              <div className="program-content">{course.Course}</div>
+              <div className="program-content">{course.University}</div>
+              <div className="program-content">{course.Department}</div>
+            </div>
+          ))}
+      </div>
+      <div className="program-pagination">
+        <p>
+          Page {apiData.pagination.current_page} of {apiData.pagination.total_pages} (Total items: {apiData.pagination.total_items})
+        </p>
+        {apiData.pagination.previous_page && <button onClick={()=>{fetchData(`http://127.0.0.1:3000/api/dashboards?page=${apiData.pagination.previous_page}`)}}>Previous Page</button>}
+        {apiData.pagination.next_page && <button onClick={()=>{fetchData(`http://127.0.0.1:3000/api/dashboards?page=${apiData.pagination.next_page}`)}}>Next Page</button>}
+      </div>
     </div>
   );
 }
