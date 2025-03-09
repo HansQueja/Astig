@@ -112,13 +112,17 @@ function Programs() {
             <div className="program-row-header">Institution</div>
             <div className="program-row-header">Department</div>
           </div>
-            {filterData && filterData.map((course) => (
+          {filterData && filterData.length > 0 ? ( // Check if filterData exists AND has elements
+            filterData.map((course) => (
               <div className="program-row" key={course.ID}>
                 <div className="program-content">{course.Program}</div>
                 <div className="program-content">{course.Institution}</div>
                 <div className="program-content">{course.Department}</div>
               </div>
-            ))}
+            ))
+          ) : (
+            <p>No matching courses found.</p> // Else condition: display a message
+          )}
         </div>
       </div>
     </div>
